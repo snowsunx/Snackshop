@@ -1,0 +1,116 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"js/update.js"
+		],
+		"refer": [
+			"guide.html"
+		]
+	},
+	"guide.html": {
+		"resources": [
+			"images/lb1.jpg",
+			"images/lb2.jpg",
+			"login.html",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"images/guide1.jpg",
+			"images/guide2.jpg",
+			"images/guide3.jpg"
+		],
+		"refer": [
+			"login.html"
+		]
+	},
+	"login.html": {
+		"resources": [
+			"main.html",
+			"css/mui.min.css",
+			"reg.html"
+		],
+		"refer": [
+			"main.html",
+			"reg.html"
+		]
+	},
+	"main.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"login.html",
+			"images/sy_sy@3x.png",
+			"images/fl_fl@3x.png",
+			"images/gwc_gwc@3x.png",
+			"images/wd_wd@3x.png",
+			"images/fl_sy@3x.png",
+			"images/fl_wode@3x.png",
+			"images/fl_gwc@3x.png",
+			"images/sy_fl@3x.png",
+			"images/sy_dw@3x.png",
+			"images/sy_search@3x.png",
+			"images/sy_sys@3x.png",
+			"css/main.css",
+			"images/banner_first@3x.png",
+			"images/sy_rxtj@3x.png",
+			"images/sy_cnxh@3x.png",
+			"images/sy_xsth@3x.png",
+			"images/sy_jt@3x.png",
+			"images/sy_sale@3x.png",
+			"images/images/sy_brand_pic1.png",
+			"images/sy_brand_pic2.png",
+			"images/sy_brand_pic1.png",
+			"images/sy_brand_pic3.png",
+			"images/fl_search@3x.png",
+			"images/fl_pic4.png",
+			"images/fl_pic5.png",
+			"images/fl_pic3.png",
+			"images/fl_pic1.png",
+			"js/jquery-3.1.1.min.js",
+			"images/images/gwc_qi.png",
+			"images/gwc_qi.png",
+			"images/gwc_product.png",
+			"images/gwc_wxz@3x.png",
+			"images/gwc_xz@3x.png",
+			"images/wd_sz@3x.png",
+			"images/wd_qd@3x.png",
+			"images/wd_xx@3x.png",
+			"images/my_photo.png",
+			"images/wd_jt@3x.png",
+			"images/wd_dd@3x.png",
+			"images/wd_tk@3x.png",
+			"images/wd_dsh@3x.png",
+			"images/wd_dfk@3x.png",
+			"images/wd_dpj@3x.png",
+			"images/wd_dfh@3x.png",
+			"images/wd_zh@3x.png",
+			"images/wd_sc@3x.png",
+			"images/wd_yj@3x.png",
+			"images/wd_zj@3x.png",
+			"images/wd_kf@3x.png",
+			"images/banner4.jpg",
+			"images/banner1.jpg",
+			"images/banner2.jpg",
+			"images/banner3.jpg",
+			"images/banner5.jpg",
+			"images/fl_pic6.png",
+			"images/fl_pic8.png",
+			"images/fl_pic7.png",
+			"js/main.js"
+		],
+		"refer": [
+			"login.html"
+		]
+	},
+	"reg.html": {
+		"resources": [
+			"login.html",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"login.html"
+		]
+	}
+}

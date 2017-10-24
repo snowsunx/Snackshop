@@ -1,0 +1,551 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" href="css/main.css"/>
+		<link rel="stylesheet" href="css/main.css"/>
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/main.js"></script>
+    	<script type="text/javascript" charset="utf-8">
+			document.documentElement.style.fontSize = document.documentElement.clientWidth/7.5+'px';
+		</script>
+		<style>
+			ul {
+				font-size: 14px;
+				color: #8f8f94;
+			}
+			.clearr{clear: both;}
+			.mui-btn {
+				padding: 10px;
+			}
+			nav span{font-size: 0.22rem;}
+			nav a img{width: 0.4rem;height: 0.4rem;margin: 0.1rem auto 0;display: block;}
+			.mui-tab-item .no1{display: block;} 
+			.mui-tab-item .no2{display: none;}
+			.mui-active .no1{display: none;}
+			.mui-active .no2{display: block;} 
+			.mui-slider-group .mui-slider-item img{width: 100%;height: 3.06rem;}
+		</style>
+	</head>
+	<body>	
+		<!--<header class="mui-bar mui-bar-nav" style="padding-right: 15px; ">
+			<h1 class="mui-title">登录模板</h1>
+			<button id='setting' class=" mui-pull-right mui-btn-link">设置</button>
+		</header>-->
+		
+		
+		<!--底部-->
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#tabbar">
+				<img src="images/fl_sy@3x.png" class="no1"/><img src="images/sy_sy@3x.png" class="no2"/>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-chat">
+				<img src="images/sy_fl@3x.png" class="no1"/><img src="images/fl_fl@3x.png" class="no2"/>
+				<span class="mui-tab-label">分类</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-contact">
+				<img src="images/fl_gwc@3x.png" class="no1"/><img src="images/gwc_gwc@3x.png" class="no2"/>
+				<span class="mui-tab-label">购物车</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-map">
+				<img src="images/fl_wode@3x.png" class="no1"/><img src="images/wd_wd@3x.png" class="no2"/>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+		
+		
+		<div class="mui-content" style=" position: absolute; overflow:auto;width: 7.5rem;">
+			<!--第一页-->
+			<div id="tabbar" class="mui-control-content mui-active">
+				<div class="sy_header">
+					<a class="sy_header_address"><img src="images/sy_dw@3x.png"/></a>
+					<a class="sy_header_hz">杭州</a>
+					<div class="sy_header_search">
+						<a><img src="images/sy_search@3x.png"/></a> 
+						<input type="text" name="" id="" value="" placeholder="搜索食品"/>
+					</div>
+					<a class="sy_header_sys"><img src="images/sy_sys@3x.png"/></a>
+				</div>
+				<!--<div class="sy_banner">
+					<img src="images/banner_first@3x.png"/>
+				</div>-->
+				<div class="mui-content">
+			<div id="slider" class="mui-slider" style="height: 3rem;margin-top: 0.96rem;">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="images/banner4.jpg">
+							<p class="mui-slider-title">静静看这世界</p>
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/banner4.jpg">
+							<p class="mui-slider-title">零食荟萃</p>
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/banner1.jpg">
+							<p class="mui-slider-title">老叶-温州好味道</p>
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/banner5.jpg">
+							<p class="mui-slider-title">超级大回馈</p>
+						</a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#">
+							<img src="images/banner3.jpg">
+							<p class="mui-slider-title">吃货最光荣</p>
+						</a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#">
+							<img src="images/banner4.jpg"/>
+							<p class="mui-slider-title">零食荟萃</p>
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator mui-text-right">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+		</div>
+				
+				<div class="sy_menu">
+					<a><img src="images/sy_cnxh@3x.png"/><span>猜你喜欢</span></a>
+					<a><img src="images/sy_rxtj@3x.png"/><span>热销推荐</span></a>
+					<a><img src="images/sy_xsth@3x.png"/><span>限时特惠</span></a>
+				</div>
+				
+				<div class="sy_content">
+					<a><img src="images/sy_sale@3x.png"/></a>
+					<div class="sy_brand">
+						<ul>
+							<li>品牌特卖</li>
+							<li>距本场结束</li>
+							<li>02</li>
+							<li>:</li>
+							<li>30</li>
+							<li>:</li>
+							<li>59</li>
+							<li>更多</li>
+							<li><img src="images/sy_jt@3x.png"/></li>
+						</ul>
+					<div class="clearr" style="clear: both;"></div>
+					<div class="header_cover">
+						<div class="sy_brand_pic">
+							<div class="">
+								<img src="images/sy_brand_pic1.png"/>
+								￥<span>26.80</span>
+								<p>省￥10.00</p>
+							</div>
+							<div class="">
+								<img src="images/sy_brand_pic2.png"/>
+								￥<span>19,90</span>
+								<p>省￥6.00</p>
+							</div>
+							<div class="">
+								<img src="images/sy_brand_pic3.png"/>
+								￥<span>35.60</span>
+								<p>省￥11.00</p>
+							</div>
+							<div class="">
+								<img src="images/sy_brand_pic3.png"/>
+								￥<span>4</span>
+								<p>省￥10.00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="sy_content sy_content2">
+					<a><img src="images/sy_sale@3x.png"/></a>
+					<div class="sy_brand">
+						<ul>
+							<li>品牌特卖</li>
+							<li>距本场结束</li>
+							<li>02</li>
+							<li>:</li>
+							<li>30</li>
+							<li>:</li>
+							<li>59</li>
+							<li>更多</li>
+							<li><img src="images/sy_jt@3x.png"/></li>
+						</ul>
+					<div class="clearr" style="clear: both;"></div>
+					<div class="header_cover">
+						<div class="sy_brand_pic">
+							<div class="">
+								<img src="images/sy_brand_pic1.png"/>
+								￥<span>26.80</span>
+								<p>省￥10.00</p>
+							</div>
+							<div class="">
+								<img src="images/sy_brand_pic2.png"/>
+								￥<span>19,90</span>
+								<p>省￥6.00</p>
+							</div>
+							<div class="">
+								<img src="images/sy_brand_pic3.png"/>
+								￥<span>35.60</span>
+								<p>省￥11.00</p>
+							</div>
+							<div class="">
+								<img src="images/sy_brand_pic3.png"/>
+								￥<span>4</span>
+								<p>省￥10.00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+			
+			
+			<!--fl-->
+			<div id="tabbar-with-chat" class="mui-control-content" style="position: relative;background: white;">
+				<div class="fl_title">
+					<div class="fl_search">
+						<a><img src="images/fl_search@3x.png"/></a>
+						<input type="text" name="" id="" value="" placeholder="搜索食品"/>
+					</div>
+				</div>
+				<div style="height: 0.96rem;"></div>
+				<div class="fl_menu">
+					<a>热门推荐</a>
+					<a>进口零食</a>
+					<a>休闲食品</a>
+					<a>保健食品</a>
+					<a>方便速食</a>
+					<a>饼干糕点</a>
+					<a>见过炒货</a>
+					<a>热门推荐</a>
+					<a>进口零食</a>
+					<a>休闲食品</a>
+					<a>保健食品</a>
+					<a>方便速食</a>
+				</div>
+				<div class="fl_right">
+					<div class="fl_snack">
+						<a><img src="images/fl_pic3.png"/><span>软糖</span></a>
+						<a><img src="images/fl_pic3.png"/><span>软糖</span></a>
+						<a><img src="images/fl_pic3.png"/><span>软糖</span></a>
+						<a><img src="images/fl_pic3.png"/><span>软糖</span></a>
+						<a><img src="images/fl_pic3.png"/><span>软糖</span></a>
+						<a><img src="images/fl_pic3.png"/><span>软糖</span></a>
+						<a><img src="images/fl_pic3.png"/><span>软糖</span></a>
+						<a><img src="images/fl_pic3.png"/><span>软糖</span></a>
+						<a><img src="images/fl_pic3.png"/><span>软糖</span></a>
+						<a><img src="images/fl_pic3.png"/><span>软糖</span></a>
+						<a><img src="images/fl_pic3.png"/><span>软糖</span></a>
+						<a><img src="images/fl_pic3.png"/><span>软糖</span></a>
+						<a><img src="images/fl_pic3.png"/><span>软糖</span></a>
+					</div>
+					<div class="fl_snack">
+						<a><img src="images/fl_pic4.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic4.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic4.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic4.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic4.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic4.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic4.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic4.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic4.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic4.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic4.png"/><span>海苔</span></a>
+					</div>
+					<div class="fl_snack">
+						<a><img src="images/fl_pic5.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic5.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic5.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic5.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic5.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic5.png"/><span>海苔</span></a>
+					</div>
+					<div class="fl_snack">
+						<a><img src="images/fl_pic6.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic6.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic6.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic6.png"/><span>海苔</span></a>
+						<a><img src="images/fl_pic6.png"/><span>海苔</span></a>
+					</div>
+					<div class="fl_snack">
+						<a><img src="images/fl_pic1.png"/><span>巧克力</span></a>
+						<a><img src="images/fl_pic1.png"/><span>巧克力</span></a>
+						<a><img src="images/fl_pic1.png"/><span>巧克力</span></a>
+						<a><img src="images/fl_pic1.png"/><span>巧克力</span></a>
+						<a><img src="images/fl_pic1.png"/><span>巧克力</span></a>
+						<a><img src="images/fl_pic1.png"/><span>巧克力</span></a>
+						<a><img src="images/fl_pic1.png"/><span>巧克力</span></a>
+						<a><img src="images/fl_pic1.png"/><span>巧克力</span></a>
+					</div>
+					<div class="fl_snack">
+						<a><img src="images/fl_pic7.png"/><span>口香糖</span></a>
+						<a><img src="images/fl_pic7.png"/><span>口香糖</span></a>
+						<a><img src="images/fl_pic7.png"/><span>口香糖</span></a>
+						<a><img src="images/fl_pic7.png"/><span>口香糖</span></a>
+						<a><img src="images/fl_pic7.png"/><span>口香糖</span></a>
+						<a><img src="images/fl_pic7.png"/><span>口香糖</span></a>
+					</div>
+					<div class="fl_snack"> 
+						<a><img src="images/fl_pic8.png"/><span>奶片</span></a>
+						<a><img src="images/fl_pic8.png"/><span>奶片</span></a>
+						<a><img src="images/fl_pic8.png"/><span>奶片</span></a>
+						<a><img src="images/fl_pic8.png"/><span>奶片</span></a>
+					</div>
+					<div class="fl_snack">
+						<a><img src="images/fl_pic7.png"/><span>口香糖</span></a>
+						<a><img src="images/fl_pic7.png"/><span>口香糖</span></a>
+						<a><img src="images/fl_pic7.png"/><span>口香糖</span></a>
+					</div>
+					<div class="fl_snack">
+						<a><img src="images/fl_pic1.png"/><span>巧克力</span></a>
+						<a><img src="images/fl_pic1.png"/><span>巧克力</span></a>
+					</div>
+					<div class="fl_snack">
+						<a><img src="images/fl_pic4.png"/><span>巧克力</span></a>
+						<a><img src="images/fl_pic3.png"/><span>巧克力</span></a>
+					</div>
+					<div class="fl_snack">
+						<a><img src="images/fl_pic6.png"/><span>巧克力</span></a>
+						<a><img src="images/fl_pic4.png"/><span>巧克力</span></a>
+						<a><img src="images/fl_pic5.png"/><span>巧克力</span></a>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+			
+			<div id="tabbar-with-contact" class="mui-control-content" style="position: relative;height: 13rem;">
+				<div class="gwc_title">
+					<a>购物车</a>
+					<span>编辑</span>
+				</div>
+				<div style="height: 1.16rem;"></div>
+				
+				<div class="gwc_product">
+					<div class="gwc_select">
+						<i>
+							<img src="images/gwc_wxz@3x.png" class="gwc_show"/>
+							<img src="images/gwc_xz@3x.png" class="gwc_hide"/>
+						</i>
+						<i>
+							<img src="images/gwc_wxz@3x.png" class="gwc_show"/>
+							<img src="images/gwc_xz@3x.png" class="gwc_hide"/>
+						</i>
+						
+					</div>
+					<div class="gwc_product_title" id="gwc_product_title">
+						<img src="images/gwc_qi.png"/>
+						<a>食全食美零食商城</a>
+						<span>领卷</span>
+						<span>编辑</span>
+					</div>
+					<div class="gwc_production">
+						<img src="images/gwc_product.png"/>
+						<div class="gwc_production_intro">
+							<h6>日本进口零食森永BAKE CRE...</h6>
+							<p>奶油夹心</p>
+							<a>￥12.00</a>
+							<ul>
+								<li class="gwc_de">-</li>
+								<li class="gwc_co">1</li>
+								<li class="gwc_ad">+</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="gwc_product">
+					<div class="gwc_select">
+						<i>
+							<img src="images/gwc_wxz@3x.png" class="gwc_show" id="gwc_show"/>
+							<img src="images/gwc_xz@3x.png" class="gwc_hide"/>
+						</i>
+						<i>
+							<img src="images/gwc_wxz@3x.png" class="gwc_show"/>
+							<img src="images/gwc_xz@3x.png" class="gwc_hide"/>
+						</i>
+						<i>
+							<img src="images/gwc_wxz@3x.png" class="gwc_show"/>
+							<img src="images/gwc_xz@3x.png" class="gwc_hide"/>
+						</i>
+						<i>
+							<img src="images/gwc_wxz@3x.png" class="gwc_show"/>
+							<img src="images/gwc_xz@3x.png" class="gwc_hide"/>
+						</i>
+					</div>
+					<div class="gwc_product_title">
+						<img src="images/gwc_qi.png"/>
+						<a>食全食美零食商城</a>
+						<span>领卷</span>
+						<span>编辑</span>
+					</div>
+					<div class="gwc_production">
+						<img src="images/gwc_product.png"/>
+						<div class="gwc_production_intro">
+							<h6>日本2进口零食森永BAKE CRE...</h6>
+							<p>奶油夹心</p>
+							<a>￥12.00</a>
+							<ul>
+								<li class="gwc_de">-</li>
+								<li class="gwc_co">2</li>
+								<li class="gwc_ad">+</li>
+							</ul>
+						</div>
+					</div>
+					<div style="clear: both;"></div>
+					
+					<div class="gwc_production">
+						<img src="images/gwc_product.png"/>
+						<div class="gwc_production_intro">
+							<h6>日本2进口零食森永BAKE CRE...</h6>
+							<p>奶油夹心</p>
+							<a>￥12.00</a>
+							<ul>
+								<li class="gwc_de">-</li>
+								<li class="gwc_co">5</li>
+								<li class="gwc_ad">+</li>
+							</ul>
+						</div>
+					</div>
+					<div style="clear: both;"></div>
+					<div class="gwc_production gwc_production2">
+						<img src="images/gwc_product.png"/>
+						<div class="gwc_production_intro">
+							<h6>日本进口零食森永BAKE CRE...</h6>
+							<p>奶油夹心</p>
+							<a>￥12.00</a>
+							<ul>
+								<li class="gwc_de" id="gwc_decrease">-</li>
+								<li class="gwc_co" id='gwc_count'>3</li>
+								<li class="gwc_ad" id="gwc_add">+</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+				
+				<div class="gwc_price">
+					<li>
+						<img src="images/gwc_wxz@3x.png" class="gwc_show1"/>
+						<img src="images/gwc_xz@3x.png" class="gwc_hide1"/>
+					</li>
+					<li>全选</li>
+					<li>合计</li>
+					<li>
+						<a>￥36.00</a>
+						<p>不含运费</p>
+					</li>
+					<li>结算</li>
+				</div>
+				
+			</div>
+			
+			
+			
+			<div id="tabbar-with-map" class="mui-control-content" style="position: relative;overflow: hidden;">
+				<div class="my_circle" id="myCircle"></div>
+				<div class="my_title">
+					<img src="images/wd_sz@3x.png"/>
+					<img src="images/wd_qd@3x.png"/>
+					<img src="images/wd_xx@3x.png"/>
+				</div> 
+				<div class="my_photo_cover" id="my_ph"> 
+					<div class="my_photo">
+						<div class="my_my">
+							<img src="images/my_photo.png" id="myPhoto"/>
+						</div>
+						<p>✿、小王子的玫瑰花~</p>
+						<span>LV 6</span>
+						<div class="my_charac" id="my_charac">
+							<ul>
+								<li>白羊座</li>
+								<li>唱歌</li>
+								<li>看书</li>
+								<li>弹吉他</li>
+								<li>+</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				<div class="my_bgcover"></div>
+				
+				<div class="goods">
+					<img src="images/wd_dd@3x.png"/>
+					<a>我的订单</a>
+					<span>查看全部订单</span>
+					<img src="images/wd_jt@3x.png"/>
+				</div>
+				
+				<div class="my_menu">
+					<a><img src="images/wd_dfk@3x.png"/><span>代付款</span></a>
+					<a><img src="images/wd_dfh@3x.png"/><span>代发货</span></a>
+					<a><img src="images/wd_dsh@3x.png"/><span>待收货</span></a>
+					<a><img src="images/wd_dpj@3x.png"/><span>待评价</span></a>
+					<a><img src="images/wd_tk@3x.png"/><span>退款/售后</span></a>
+				</div>
+				<div class="my_submenu">
+					<li>
+						<img src="images/wd_zh@3x.png"/>
+						<a>我的账户</a>
+						<img src="images/wd_jt@3x.png"/>
+						<span>余额·优惠卷·积分·金币</span>
+					</li>
+					<li>
+						<img src="images/wd_sc@3x.png"/>
+						<a>我的收藏</a>
+						<img src="images/wd_jt@3x.png"/>
+					</li>
+				</div>
+				<div class="my_submenu my_submenu2">
+					<li>
+						<img src="images/wd_zj@3x.png"/>
+						<a>我的足迹</a>
+						<img src="images/wd_jt@3x.png"/>
+					</li>
+					<li>
+						<img src="images/wd_kf@3x.png"/>
+						<a>联系客服</a>
+						<img src="images/wd_jt@3x.png"/>
+						<span>010-62336530</span>
+					</li>
+					<li>
+						<img src="images/wd_yj@3x.png"/>
+						<a>意见反馈</a>
+						<img src="images/wd_jt@3x.png"/>
+					</li>
+				</div>
+				
+				<button class="my_out">退出登录</button>
+			</div>
+		</div>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		
+	</script>
+</html>
